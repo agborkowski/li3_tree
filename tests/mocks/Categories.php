@@ -9,10 +9,11 @@ class Categories extends \li3_tree\data\Model {
 	protected $_meta = array('connection' => 'test');
 	protected $_schema = array(
 		'id' => array('type' => 'integer'),
-		'name' => array('type' => 'string'),
+		'text' => array('type' => 'string'),
 		'parent_id' => array('type' => 'integer'),
 		'lft' => array('type' => 'integer'),
 		'rght' => array('type' => 'integer'),
+		'enabled' => array('type' => 'boolean', 'null' => false, 'default' => 1)
 	);
 }
 

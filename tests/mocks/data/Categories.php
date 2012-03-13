@@ -9,9 +9,10 @@ class Categories extends \li3_tree\extensions\Model {
 	protected $_meta = array('connection' => 'test');
 	protected $_schema = array(
 		'id' => array('type' => 'integer'),
-		'name' => array('type' => 'string'),
+		'text' => array('type' => 'string'),
 		'lft' => array('type' => 'integer'),
 		'rght' => array('type' => 'integer'),
+		'enabled' => array('type' => 'boolean')
 	);
 }
 
